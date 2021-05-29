@@ -22,6 +22,7 @@ export default function Home({ products }) {
          {/* ProductFeed */}
 
          <Productfeed products={ products } />
+         
        </main>
 
       </div>
