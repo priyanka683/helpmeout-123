@@ -7,7 +7,9 @@ import  Currency  from "react-currency-formatter";
 import { useSession } from "next-auth/client";
 import { loadStripe } from "@stripe/stripe-js";
 import axios from "axios";
-const srtirePromise = loadStripe(`pk_test_51Ix84nSF4p9hntUOyq3xotsI5PO6ZPX69j63w92Z7hrX52SwtYtX2cn6cs7gm4giuO1r5mFV04bvYnxsAY2jomrw00O354lbbl`);
+const srtirePromise = loadStripe(`pk_test_51Ix84nSF4p9hntUOyq3xotsI5PO6ZPX69j63w92Z7hrX52SwtYtX2cn6cs7gm4giuO1r5mFV04bvYnxsAY2jomrw00O354lbbl`,{
+  stripeAccount: 'acct_1Ix84nSF4p9hntUO'
+});
 
 function checkout() {
 
